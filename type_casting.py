@@ -71,3 +71,28 @@ print(f"In 5 years you will be {age + 5}")  # works because age is now int
 price = float("19.99")     # cast string → float
 tax = price * 0.08
 print(f"Price: ${price:.2f}, Tax: ${tax:.2f}, Total: ${price + tax:.2f}")
+
+# ─────────────────────────────────────────────
+# 8. User input with explicit type casting
+# ─────────────────────────────────────────────
+print("\n=== User input with explicit type casting ===")
+
+# Modify the line below
+name = str(input('What is your name? '))
+
+print(f"Type of name variable is: {type(name)}. It should be <class 'str'>")
+
+# Modify the line below
+age = int(input('What is your age? '))
+
+print(f"Type of age variable is: {type(age)}. It should be <class 'int'>")
+
+# Modify the line below
+height = float(input('What is your height in meters? '))
+
+print(f"Type of height variable is: {type(height)}. It should be <class 'float'>")
+
+# Modify the line below
+loyalty = bool(input('Are you part of our loyalty program? '))
+
+print(f"Type of loyalty variable is: {type(loyalty)}. It should be <class 'bool'>")
